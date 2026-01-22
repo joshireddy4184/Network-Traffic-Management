@@ -1,0 +1,44 @@
+Network Traffic Management Using Python Sockets
+
+This project simulates network traffic management using Python socket programming. It demonstrates how a server monitors incoming traffic, detects congestion, and controls client sending rates to reduce packet overload.
+
+->Features
+Client–server communication using TCP sockets
+Real-time traffic monitoring (packets/sec)
+Congestion detection using threshold-based logic
+Dynamic traffic control by adjusting client send rates
+Traffic visualization using Matplotlib
+
+->Technologies Used
+Python
+Socket Programming
+Multithreading
+Matplotlib
+
+->Performance Metrics
+Traffic Rate (Packets/sec)
+Congestion Detection
+Throughput Improvement via Rate Control
+
+->How It Works
+Multiple clients send packets to the server
+Server counts packets every second
+If traffic exceeds threshold, congestion is detected
+Clients reduce sending rate
+Traffic stabilizes and throughput improves
+
+->How to Run
+python server.py
+python client.py
+
+Run multiple clients in separate terminals.
+
+->Output
+The server displays real-time traffic statistics and plots a graph showing network traffic over time.
+
+->Future Improvements
+
+Multi-client congestion feedback
+Packet loss calculation
+Latency measurement
+Advanced congestion algorithms
